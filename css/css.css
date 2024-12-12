@@ -10,9 +10,15 @@ body{
     font-family: 'KaiTi', '楷体', sans-serif; /* 设置为楷体简体 */
 }
 
-.fulu11, .fulu12{
+.fulu11{
     width: 300px;
     max-width: 100%;
+    marign-left:0px;
+}
+.fulu12{
+    width: 300px;
+    max-width: 100%;
+    marign-right:0px
 }
 
 .d1{
