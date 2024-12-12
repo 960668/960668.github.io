@@ -1,15 +1,18 @@
 body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'KaiTi', '楷体', sans-serif; /* 设置为楷体简体 */
 }
 
 .fulu11, .fulu12{
-    width: 200px;
+    width: 300px;
+    max-width: 100%;
 }
 
 .d1{
@@ -76,7 +79,7 @@ body{
     position: absolute;
     top: 300px;
     writing-mode: vertical-lr; /* 从左到右竖排 */
-    right: 120px;
+    right: 30px;
 
     position: absolute;
     transform: translate(-50%, -50%);
@@ -101,7 +104,7 @@ body{
     position: absolute;
     top: 300px;
     writing-mode: vertical-lr; /* 从左到右竖排 */
-    left: 150px;
+    left: 50px;
 
     position: absolute;
     transform: translate(-50%, -50%);
@@ -141,10 +144,10 @@ body{
 /* 卦象相关样式 */
 .gua-container {
     display: flex;
-    justify-content: center;
-    max-width: 50px;
+    justify-content: space-around;
+    width: 100%;
     margin-top: 50px;
-    padding: 0 300px;
+    padding: 0 20px;
 }
 
 .gua {
@@ -222,7 +225,7 @@ body{
 
 .time-info {
     color: white;
-    font-size: 20px !important; /* 增大天干地支文字大小 */
+    font-size: 40px !important; /* 增大天干地支文字大小 */
     text-align: center;
     margin-bottom: 30px;
 }
@@ -232,10 +235,4 @@ body{
     flex-direction: column;
     gap: 25px;
     margin-top: 20px;
-}
-/* 在移动端适配的媒体查询中添加 */
-@media screen and (max-width: 800px) {
-    .p5, .p6 {
-        display: none !important;  /* 使用 !important 确保覆盖其他样式 */
-    }
 }
