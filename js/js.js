@@ -481,12 +481,13 @@ function createGua(gua, title) {
         const dateTimeInfo = formatDateTime();
         const { originalGua, changedGua } = generateGua();
         p1.style.display = 'none'; // 点击后隐藏 p1
+        p2.style.display = 'none';
         p4.style.display = 'none'; // 点击后隐藏 p4
         p3.style.display = 'block'; // 显示 p3
         i1.style.transition = 'opacity 2s ease'; // 添加过渡效果
-        i1.style.opacity = '0.2'; // 设置新的透明度
+        i1.style.opacity = '0'; // 设置新的透明度
         i2.style.transition = 'opacity 2s ease'; // 添加过渡效果
-        i2.style.opacity = '0.2'; // 设置新的透明度
+        i2.style.opacity = '0'; // 设置新的透明度
 
     // 先显示p5
     animateText(p6, 150);
