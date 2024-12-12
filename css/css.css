@@ -1,0 +1,235 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'KaiTi', '楷体', sans-serif; /* 设置为楷体简体 */
+}
+
+.fulu11, .fulu12{
+    width: 300px;
+}
+
+.d1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.d2{
+    width: 1000px;
+    height: 700px;
+    background-color: rgb(92, 110, 125);
+    position: absolute;
+    top: 80px;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0); /* 50% 透明度的白色背景 */
+}
+
+.p1{
+    height: auto;
+    font-size: xx-large;
+    color: #ffffff;
+    position: absolute;
+    bottom: 160px;
+    font-family: 'Dancing Script', cursive;
+    transition: transform 0.5s ease, text-shadow 0.5s ease;
+    transform: scale(1);
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.p2{
+    height: auto;
+    font-size: xx-large;
+    color: #ffffff;
+    position: absolute;
+    top: 300px;
+    font-family: 'Dancing Script', cursive;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+.p3{
+    font-size: large;
+    position: absolute;
+    bottom: 10px;
+    color: #ffffff;
+}
+.p4{
+    height: auto;
+    font-size: xx-large;
+    color: #ffffff;
+    position: absolute;
+    top: 300px;
+    transition: all 0.8s ease;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+.p5 {
+    height: auto;
+    font-size: xx-large;
+    color: #ffffff;
+    position: absolute;
+    top: 300px;
+    writing-mode: vertical-lr; /* 从左到右竖排 */
+    right: 400px;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始隐藏 */
+}
+
+.p5 span {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.p5 span.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.p6 {
+    height: auto;
+    font-size: xx-large;
+    color: #ffffff;
+    position: absolute;
+    top: 300px;
+    writing-mode: vertical-lr; /* 从左到右竖排 */
+    left: 400px;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始隐藏 */
+}
+
+.p6 span {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.p6 span.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.p4-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20px); /* 添加一个向上移动的效果 */
+}
+.visible {
+    opacity: 1;
+}
+
+.enlarged {
+    transform: scale(1.5);
+    text-shadow: 0 0 10px white;
+}
+
+.character-container {
+    display: inline-block;
+    margin: 1px;
+}
+
+/* 卦象相关样式 */
+.gua-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.gua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.hexagram-name {
+    color: white;
+    font-size: 28px; /* 增大卦名字体 */
+    text-align: center;
+    margin: 15px 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 确保左对齐 */
+    gap: 20px;
+    width: 100%;
+}
+
+.liu-shen {
+    width: 40px;
+    color: white;
+    text-align: right;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.yao-line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    width: 150px; /* 确保每个爻的宽度一致 */
+    height: 20px; /* 确保每个爻的高度一致 */
+}
+
+.yao-content {
+    width: 100px;
+}
+
+.yang-line, .yin-line span {
+    height: 3px; /* 确保爻的线条高度一致 */
+    background-color: white;
+}
+
+.yin-line span {
+    width: 45px;
+    height: 3px;
+    background-color: white;
+}
+
+.change-marker {
+    color: white;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+
+.gua-title {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.time-info {
+    color: white;
+    font-size: 40px !important; /* 增大天干地支文字大小 */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gua-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
